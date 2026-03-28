@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Oswald:wght@300;400;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cinzel', serif;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.scene-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #050505;
+}
+
+.title {
+  font-size: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #e0e0e0;
+  text-shadow: 0 5px 15px rgba(0, 0, 0, 0.8), 0 0 40px rgba(255, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.subtitle {
+  font-size: 50px;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  color: #cccccc;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);
+  z-index: 10;
+  max-width: 80%;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.9) 100%);
+  z-index: 5;
+}
+
+/* Narración (voice-over) — aparece en la parte inferior */
+.narration {
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(220, 220, 220, 0.9);
+  font-size: 30px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  max-width: 75%;
+  text-shadow: 0 2px 10px rgba(0,0,0,1), 0 0 30px rgba(0,0,0,0.9);
+  letter-spacing: 0.5px;
+  z-index: 20;
+  line-height: 1.4;
+}
+
+/* Bloque de presentadores (escena final) */
+.presenters-block {
+  text-align: center;
+  z-index: 20;
+  padding: 24px 60px;
+  border-top: 1px solid rgba(200, 160, 80, 0.5);
+  border-bottom: 1px solid rgba(200, 160, 80, 0.5);
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.presenters-label {
+  font-size: 22px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  color: rgba(200, 160, 80, 0.9);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 16px;
+}
+
+.presenter-name {
+  font-size: 34px;
+  font-family: 'Cinzel', serif;
+  color: #e8e8e8;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  line-height: 1.7;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+}
+
+/* Línea separadora dorada */
+.gold-line {
+  width: 120px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(200,160,80,0.8), transparent);
+  margin: 0 auto 20px;
+}
